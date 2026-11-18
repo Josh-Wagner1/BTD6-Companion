@@ -1,0 +1,6 @@
+@BTD6_Companion.Server_HostAddress = http://localhost:5222
+
+GET {{BTD6_Companion.Server_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

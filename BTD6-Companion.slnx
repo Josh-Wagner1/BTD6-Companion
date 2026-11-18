@@ -1,0 +1,7 @@
+<Solution>
+  <Project Path="btd6-companion.client/btd6-companion.client.esproj">
+    <Build />
+    <Deploy />
+  </Project>
+  <Project Path="BTD6-Companion.Server/BTD6-Companion.Server.csproj" />
+</Solution>
