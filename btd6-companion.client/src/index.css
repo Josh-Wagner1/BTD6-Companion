@@ -6,6 +6,8 @@
     --boxHead: #160f09;
     --boxContent: #2c241d;
     --text: #ffffff;
+    --shadow: #000000;
+    --shadow2: #808080
 }
 
 * {
@@ -14,18 +16,19 @@
 
 h1, h2, h3, a {
     color: var(--text);
-    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    text-shadow: -1px -1px 0 var(--shadow), 1px -1px 0 var(--shadow), -1px 1px 0 var(--shadow), 1px 1px 0 var(--shadow);
 }
 
 p {
     color: var(--text);
     font-size: 16px;
-    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    text-shadow: -1px -1px 0 var(--shadow), 1px -1px 0 var(--shadow), -1px 1px 0 var(--shadow), 1px 1px 0 var(--shadow);
+    height: 5px;
 }
 
 li {
     color: var(--text);
-    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    text-shadow: -1px -1px 0 var(--shadow), 1px -1px 0 var(--shadow), -1px 1px 0 var(--shadow), 1px 1px 0 var(--shadow);
 }
 
 body {
@@ -62,7 +65,6 @@ body {
     flex-direction: column;
     justify-content: left;
     text-align: justify;
-    padding: 0px 20px;
     opacity: 0.99;
     background-color: var(--content);
 }
@@ -72,6 +74,7 @@ body {
     margin: 40px auto 0;
     width: 95%;
     background-color: var(--boxHead);
+    box-shadow: -2px -2px 0 var(--shadow2), 2px -2px 0 var(--shadow2), -2px 2px 0 var(--shadow2), 2px 2px 0 var(--shadow2);
     display: flex;
     flex-direction: column;
     justify-content: center;

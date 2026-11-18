@@ -2,15 +2,15 @@
 import Navbar from '../components/Navbar.jsx';
 import Footer from '../components/Footer.jsx';
 
-import Monkeys from '../assets/pageIcons/Monkeys.png';
-import Heroes from '../assets/pageIcons/Heroes.png';
-import Powers from '../assets/pageIcons/Powers.png';
-import Maps from '../assets/pageIcons/Maps.png';
-import Rounds from '../assets/pageIcons/Rounds.png';
-import Cosmetics from '../assets/pageIcons/Cosmetics.png';
-import Achievements from '../assets/pageIcons/Achievements.png';
-import GiftCodes from '../assets/pageIcons/GiftCodes.png';
 import UpdateArt from '../assets/updateArt/v57.jpg';
+
+const images = import.meta.glob(
+    '../assets/pageIcons/*.{png,jpg,jpeg,svg}',
+    {
+        eager: true,
+        import: 'default'
+    }
+);
 
 const Home = () => {
     return (
@@ -36,35 +36,54 @@ const Home = () => {
                     <h2>Browse</h2>
                     <div className="boxContent">
                         <div className="boxItem">
-                            <img src={Monkeys} alt="Monkeys"></img>
+                            <img src={images['../assets/pageIcons/Monkeys.png']} alt="Monkeys"></img>
                             <p>Monkeys</p>
                         </div>
                         <div className="boxItem">
-                            <img src={Heroes} alt="Heroes"></img>
+                            <img src={images['../assets/pageIcons/Heroes.png']} alt="Heroes"></img>
                             <p>Heroes</p>
                         </div>
                         <div className="boxItem">
-                            <img src={Powers} alt="Powers"></img>
+                            <img src={images['../assets/pageIcons/Powers.png']} alt="Powers"></img>
                             <p>Powers</p>
                         </div>
                         <div className="boxItem">
-                            <img src={Maps} alt="Maps"></img>
+                            <img src={images['../assets/pageIcons/Maps.png']} alt="Maps"></img>
                             <p>Maps</p>
                         </div>
                         <div className="boxItem">
-                            <img src={Rounds} alt="Rounds"></img>
-                            <p>Roundsets</p>
-                        </div>
-                        <div className="boxItem">
-                            <img src={Cosmetics} alt="Cosmetics"></img>
+                            <img src={images['../assets/pageIcons/Cosmetics.png']} alt="Cosmetics"></img>
                             <p>Cosmetics</p>
                         </div>
                         <div className="boxItem">
-                            <img src={Achievements} alt="Achievements"></img>
+                            <img src={images['../assets/pageIcons/Achievements.png']} alt="Achievements"></img>
                             <p>Achievements</p>
                         </div>
+                    </div>
+
+                    <div className="boxContent">
                         <div className="boxItem">
-                            <img src={GiftCodes} alt="GiftCodes"></img>
+                            <img src={images['../assets/pageIcons/Knowledge.png']} alt="Knowledge"></img>
+                            <p>Knowledge</p>
+                        </div>
+                        <div className="boxItem">
+                            <img src={images['../assets/pageIcons/Legends.png']} alt="Legends"></img>
+                            <p>Legends</p>
+                        </div>
+                        <div className="boxItem">
+                            <img src={images['../assets/pageIcons/Quests.png']} alt="Quests"></img>
+                            <p>Quests</p>
+                        </div>
+                        <div className="boxItem">
+                            <img src={images['../assets/pageIcons/Rounds.png']} alt="Rounds"></img>
+                            <p>Roundsets</p>
+                        </div>
+                        <div className="boxItem">
+                            <img src={images['../assets/pageIcons/Teams.png']} alt="Teams"></img>
+                            <p>Teams</p>
+                        </div>
+                        <div className="boxItem">
+                            <img src={images['../assets/pageIcons/GiftCodes.png']} alt="GiftCodes"></img>
                             <p>Gift Codes</p>
                         </div>
                     </div>
@@ -73,6 +92,10 @@ const Home = () => {
                 <div className="box">
                     <h2>Events</h2>
                     <div className="boxContent">
+                        <h2>Active</h2>
+                    </div>
+                    <div className="boxContent">
+                        <h2>Recent</h2>
                     </div>
                 </div>
             </div>
