@@ -7,13 +7,10 @@
         public int MonkeyId { get; set; } required
         public string Name { get; set; } required
         public string Path { get; set; } // e.g. 5-2-0
-        public double Range { get; set; } // In tiles
+        public string Description { get; set; }
         public double FootprintRadius { get; set; } // In tiles
         public string? ImgRef { get; set; }
-
-
-        // TODO
-        // Attacks
-
+        public List<AttackModel>? Attacks { get; set; }
+        public List<AbilityModel>? Abilities { get; set; }
     }
 }

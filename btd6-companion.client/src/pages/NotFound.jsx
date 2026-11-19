@@ -1,8 +1,8 @@
-//import React from 'react';
+import React from 'react';
 import Navbar from '../components/Navbar.jsx';
 import Footer from '../components/Footer.jsx';
 
-const Monkeys = () => {
+const Events = () => {
     return (
         <div className="app">
             <div>
@@ -10,8 +10,10 @@ const Monkeys = () => {
             </div>
 
             <div className="content">
-                <h1>Dart Monkey</h1>
-                <p>Sample text</p>
+                <div className="box">
+                    <h1>These aren't the monkeys you are looking for...</h1>
+                    <p>Page is Invalid/doesn't exist</p>
+                </div>
             </div>
 
             <div>
@@ -21,4 +23,4 @@ const Monkeys = () => {
     )
 }
 
-export default Monkeys
+export default Events

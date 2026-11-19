@@ -1,6 +1,7 @@
-//import React from 'react';
+import React from 'react';
 import Navbar from '../components/Navbar.jsx';
 import Footer from '../components/Footer.jsx';
+import EventBox from '../components/EventBox.jsx';
 
 import UpdateArt from '../assets/updateArt/v57.jpg';
 
@@ -67,6 +68,10 @@ const Home = () => {
                             <p>Knowledge</p>
                         </div>
                         <div className="boxItem">
+                            <img src={images['../assets/pageIcons/Teams.png']} alt="Events"></img>
+                            <p>Events</p>
+                        </div>
+                        <div className="boxItem">
                             <img src={images['../assets/pageIcons/Legends.png']} alt="Legends"></img>
                             <p>Legends</p>
                         </div>
@@ -79,25 +84,13 @@ const Home = () => {
                             <p>Roundsets</p>
                         </div>
                         <div className="boxItem">
-                            <img src={images['../assets/pageIcons/Teams.png']} alt="Teams"></img>
-                            <p>Teams</p>
-                        </div>
-                        <div className="boxItem">
                             <img src={images['../assets/pageIcons/GiftCodes.png']} alt="GiftCodes"></img>
                             <p>Gift Codes</p>
                         </div>
                     </div>
                 </div>
 
-                <div className="box">
-                    <h2>Events</h2>
-                    <div className="boxContent">
-                        <h2>Active</h2>
-                    </div>
-                    <div className="boxContent">
-                        <h2>Recent</h2>
-                    </div>
-                </div>
+                <EventBox />
             </div>
 
             <div>

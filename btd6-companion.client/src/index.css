@@ -5,6 +5,7 @@
     --content: #29353C;
     --boxHead: #160f09;
     --boxContent: #2c241d;
+    --boxContent2: #5e524c;
     --text: #ffffff;
     --shadow: #000000;
     --shadow2: #808080
@@ -64,7 +65,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: left;
-    text-align: justify;
+    text-align: left;
     opacity: 0.99;
     background-color: var(--content);
 }
@@ -84,7 +85,7 @@ body {
 }
 
 .boxContent {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(6, 1fr);
     height: auto;
     width: 95%;
     display: flex;

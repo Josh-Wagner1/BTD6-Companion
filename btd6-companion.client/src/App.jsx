@@ -1,16 +1,21 @@
-﻿// import React from 'react';
+﻿import React from 'react';
+import { BrowserRouter, Routes, Route } from 'react-router';
 
-import Home from './routes/Home.jsx';
-import Monkeys from './routes/Monkeys.jsx';
+import Home from './pages/Home.jsx';
+import Monkeys from './pages/Monkeys.jsx';
+import Events from './pages/Events.jsx';
+import NotFound from './pages/NotFound.jsx';
 
 function App() {
-    const path = window.location.pathname;
-
     return (
-        <div>
-            {path === '/' && <Home />}
-            {path === '/Monkeys' && <Monkeys />}
-        </div>
+        <BrowserRouter>
+            <Routes>
+                <Route path="/" element={<Home />} />
+                <Route path="/Monkeys" element={<Monkeys />} />
+                <Route path="/Events" element={<Events />} />
+                <Route path="*" element={<NotFound />} />
+            </Routes>
+        </BrowserRouter>
     )
 }
 
